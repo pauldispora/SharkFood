@@ -2,14 +2,7 @@
 <html>
 <head>
     <title>Frisco Epoxy Flooring</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .header { text-align: center; padding: 20px; }
-        .subheader { text-align: center; padding: 10px; }
-        .bullet-points { padding: 20px; }
-        .estimate-section, .services-section, .footer { padding: 20px; text-align: center; }
-        .footer { background-color: #f2f2f2; }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="header">
