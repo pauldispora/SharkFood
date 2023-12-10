@@ -1,7 +1,7 @@
 /* Header Styles */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px;
     background-color: #4169e1;
@@ -15,12 +15,20 @@
 }
 
 .home-button {
-    background-color: transparent;
-    color: white;
+    background-color: transparent; /* Transparent background */
+    color: white; /* Set the text color to match the rest of the text */
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 16px; /* Adjust to match the size of your text */
     padding: 10px 20px;
+    text-align: center;
+    text-decoration: none; /* Remove underline from button text */
+    font-family: Arial, sans-serif; /* Match the font style of your text */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.home-button:hover {
+    color: #ddd; /* Slightly change color on hover for visual feedback */
 }
 
 .hero-section {
@@ -78,15 +86,9 @@
 /* Responsive Design */
 @media (max-width: 767px) {
     .header, .section, .footer {
-        padding: 20px 10px;
+        padding: 20px 30px;
     }
 
-    .text {
-        margin: 15px 0;
+    .home-button {
+        display: none; /* Hide home button on mobile */
     }
-
-    .button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-}
