@@ -82,11 +82,19 @@
     font-family: Verdana, sans-serif;
 }
 
-.image-section {
-    text-align: center;
+/* Side-by-Side Container Styles */
+.side-by-side-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start; /* Align items to the top */
     padding: 20px;
-    margin: auto;
-    max-width: 600px;
+}
+
+.image-section {
+    flex: 1;
+    text-align: center; /* Center everything in this section */
+    margin-right: 20px; /* Add some space between the sections */
+    max-width: 600px; /* Limit the width of the image section */
 }
 
 .image-section img {
@@ -99,6 +107,17 @@
 .image-section p {
     margin-top: 20px
 
+/* Our Services Section Styles */
+.services-section {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+    max-width: 600px; /* Limit the width if necessary */
+}
+
+.services-section ul {
+    list-style-type: disc; /* Style for bullet points */
+    padding-left: 30px; /* Space for bullet points */
+}
 
 /* Footer Styles */
 .footer {
@@ -125,5 +144,17 @@
     .hero-section, .estimate-section {
         flex: none; 
         margin-right: 0; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .side-by-side-container {
+        flex-direction: column;
+    }
+
+    .image-section, .services-section {
+        flex: none;
+        margin-right: 0;
+        max-width: 100%; /* Full width on smaller screens */
     }
 }
