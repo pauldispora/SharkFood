@@ -20,7 +20,7 @@
 
 .home-button {
     transition-duration: 0.4s;
-    background-color: #4169E1
+    background-color: #4169E1;
     border: none; 
     color: black; 
     cursor: pointer;
@@ -29,8 +29,8 @@
 }
 
 .home-button:hover {
-    background-color: #;4169e1
-    color: #ddd; /* Slightly change color on hover for visual feedback */
+    background-color: #4169e1; 
+    color: #ddd;
 }
 
 .hero-section {
