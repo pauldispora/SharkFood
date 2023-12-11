@@ -1,14 +1,17 @@
 /* Header Styles */
 .header {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: space-between; 
     align-items: center;
-    padding: 20px 40px; 
+    padding: 20px; 
     background-color: #4197FE;
     color: white;
 }
 
-/* Logo Styles */
+.logo {
+    /* If needed, add specific styles for the logo here */
+}
+
 .logo img {
     height: 50px; /* Adjust as needed */
     width: auto;
@@ -16,18 +19,17 @@
 
 .home-button {
     background-color: transparent;
+    border: none; 
     color: white; 
-    border: none;
     cursor: pointer;
     font-size: 16px; 
-    padding: 10px 20px;
-    text-align: center;
+    padding: 10px 20px; 
     text-decoration: none; 
     font-family: Arial, sans-serif; 
-    transition: color 0.3s ease; 
 }
 
 .home-button:hover {
+    background-color: transparent;
     color: #ddd; /* Slightly change color on hover for visual feedback */
 }
 
@@ -83,12 +85,11 @@
     text-align: left;
 }
 
-/* Responsive Design */
 @media (max-width: 767px) {
-    .header, .section, .footer {
-        padding: 20px 30px;
+    .header {
+        /* Responsive adjustments for header */
     }
 
     .home-button {
-        display: none; /* Hide home button on mobile */
+        display: none; /* Hide the button on smaller screens if desired */
     }
