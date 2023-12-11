@@ -1,10 +1,10 @@
 /* Header Styles */
 .header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start; 
     align-items: center;
-    padding: 20px;
-    background-color: #4169e1;
+    padding: 20px 40px; 
+    background-color: #4197FE;
     color: white;
 }
 
@@ -15,16 +15,16 @@
 }
 
 .home-button {
-    background-color: transparent; /* Transparent background */
-    color: white; /* Set the text color to match the rest of the text */
+    background-color: transparent;
+    color: white; 
     border: none;
     cursor: pointer;
-    font-size: 16px; /* Adjust to match the size of your text */
+    font-size: 16px; 
     padding: 10px 20px;
     text-align: center;
-    text-decoration: none; /* Remove underline from button text */
-    font-family: Arial, sans-serif; /* Match the font style of your text */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none; 
+    font-family: Arial, sans-serif; 
+    transition: color 0.3s ease; 
 }
 
 .home-button:hover {
