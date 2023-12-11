@@ -112,12 +112,14 @@
 
 .image-section p {
     margin-top: 20px;
+}
 
 /* Our Services Section Styles */
 .services-section {
     flex: 1;
-    text-align: left; /* Align text to the left */
-    max-width: 400px; /* Limit the width if necessary */
+    text-align: left;
+    max-width: 400px;
+    padding-left: 10px;
 }
 
 .services-section ul {
@@ -152,17 +154,15 @@
         /* Responsive adjustments for header */
     }
 
-    .content-container {
+content-container, .side-by-side-container {
         flex-direction: column; /* Stack the sections on top of each other */
     }
 
-    .home-button {
+    .home-button, .hero-section, .estimate-section, .image-section, .services-section, .sub-footer {
         display: none; /* Hide the button on smaller screens if desired */
-    }
-
-    .hero-section, .estimate-section {
         flex: none; 
         margin-right: 0; 
+        max-width: 100%; /* Full width on smaller screens */
     }
 }
 
@@ -178,9 +178,3 @@
         padding-right: 0; /* Reset spacing */
         padding-left: 0; /* Reset spacing */
     }
-    
-@media (max-width: 767px) {
-    .sub-footer {
-        /* Optional: Add any responsive adjustments for smaller screens */
-    }
-}
