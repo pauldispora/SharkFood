@@ -34,20 +34,19 @@
     padding: 20px;
 }
 
-/* Styles for Hero Section */
-.hero-section {
-    flex: 1; 
-    margin-right: 20px;
+.hero-section, .estimate-section {
+    flex: 1 1 50%; /* Equal distribution */
+    max-width: 50%; /* Limit the width to 50% of the parent */
+    box-sizing: border-box; /* Include padding and border in the element's width */
 }
 
-/* Styles for Estimate Section */
 .estimate-section {
-    flex: 1; /* Takes the other half of the available space */
-    margin-right: 20px;
+    padding-left: 10px; /* Adjust as needed for spacing */
+    /* Additional styles for the estimate-section if necessary */
 }
 .hero-section {
     text-align: left;
-    padding: 50px 20px;
+    padding: 10px;
     background-color: #ffffff;
     font-family: Verdana, sans-serif; 
 }
@@ -172,12 +171,13 @@
         flex-direction: column;
     }
 
-    .image-section, .services-section {
+    .hero-section, .estimate-section, .image-section, .services-section {
         flex: none;
         margin-right: 0;
         max-width: 100%; /* Full width on smaller screens */
+        padding-right: 0; /* Reset spacing */
+        padding-left: 0; /* Reset spacing */
     }
-}
     
 @media (max-width: 767px) {
     .sub-footer {
