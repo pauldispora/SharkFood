@@ -10,7 +10,7 @@
 }
 
 .logo img {
-    height: 60px; /* Adjust as needed */
+    height: 70px; /* Adjust as needed */
     width: auto;
 }
 
@@ -80,6 +80,24 @@
     line-height: 1.5;
     font-family: Verdana, sans-serif;
 }
+
+.image-section {
+    text-align: center;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-section p {
+    /* Additional styles for the paragraph if needed */
+    margin-top: 20px
+
 
 /* Footer Styles */
 .footer {
