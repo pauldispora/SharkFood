@@ -90,11 +90,18 @@
     padding: 20px;
 }
 
+.image-section, .services-section {
+    flex: 1 1 50%; /* Equal distribution */
+    /* flex-grow: 1; This allows the box to grow equally */
+    /* flex-shrink: 1; This allows the box to shrink equally */
+    /* flex-basis: 50%; This sets the initial length of the box to 50% */
+    max-width: 50%; /* Limit the width to 50% of the parent */
+    box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
 .image-section {
-    flex: 1;
-    text-align: center; /* Center everything in this section */
-    margin-right: 20px; /* Add some space between the sections */
-    max-width: 600px; /* Limit the width of the image section */
+    text-align: center;
+    padding-right: 10px; /* Adjust as needed for spacing */
 }
 
 .image-section img {
@@ -111,23 +118,36 @@
 .services-section {
     flex: 1;
     text-align: left; /* Align text to the left */
-    max-width: 600px; /* Limit the width if necessary */
+    max-width: 400px; /* Limit the width if necessary */
 }
 
 .services-section ul {
     list-style-type: disc; /* Style for bullet points */
     padding-left: 30px; /* Space for bullet points */
 }
+    
+.services-section {
+    text-align: left;
+    padding-left: 10px; /* Adjust as needed for spacing */
+}
 
 /* Footer Styles */
 .footer {
-    background-color: #4169e1;
+    background-color: #4169E1;
     color: white;
     padding: 30px;
     text-align: left;
     font-family: Verdana, sans-serif;
 }
-
+    
+/* Sub-Footer Styles */
+.sub-footer {
+    background-color: #4169E1;
+    color: white;
+    text-align: left;
+    padding: 10px 20px;
+    font-family: Verdana, sans-serif;
+}
 @media (max-width: 767px) {
     .header {
         /* Responsive adjustments for header */
@@ -156,5 +176,11 @@
         flex: none;
         margin-right: 0;
         max-width: 100%; /* Full width on smaller screens */
+    }
+}
+    
+@media (max-width: 767px) {
+    .sub-footer {
+        /* Optional: Add any responsive adjustments for smaller screens */
     }
 }
