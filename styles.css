@@ -4,13 +4,9 @@
     justify-content: space-between; 
     align-items: center;
     padding: 50px; 
-    background-color: #4197FE;
-    color: white;
+    background-color: #ffffff;
+    color: grey;
     font-family: Verdana, sans-serif;
-}
-
-.logo {
-    /* If needed, add specific styles for the logo here */
 }
 
 .logo img {
@@ -19,18 +15,15 @@
 }
 
 .home-button {
-    transition-duration: 0.4s;
-    background-color: #4169E1;
-    border: none; 
-    color: black; 
+    background: none;
+    border: none;
+    color: grey;
     cursor: pointer;
-    font-size: 16px; 
-    font-family: Verdana, sans-serif; 
-}
-
-.home-button:hover {
-    background-color: #4169e1; 
-    color: #ddd;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
 }
 
 .hero-section {
