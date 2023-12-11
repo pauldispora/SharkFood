@@ -30,19 +30,20 @@
 .content-container {
     display: flex;
     justify-content: space-between;
-    align-items: start; /* Align items to the start of the container */
+    align-items: start;
     padding: 20px;
 }
 
 /* Styles for Hero Section */
 .hero-section {
-    flex: 1; /* Takes half of the available space */
-    margin-right: 20px; /* Add some space between the sections */
+    flex: 1; 
+    margin-right: 20px;
 }
 
 /* Styles for Estimate Section */
 .estimate-section {
     flex: 1; /* Takes the other half of the available space */
+    margin-right: 20px;
 }
 .hero-section {
     text-align: left;
@@ -83,19 +84,18 @@
 
 .image-section {
     text-align: center;
-    padding: 20px; /* Adjust padding as needed */
+    padding: 20px;
 }
 
 .image-section img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
-    max-width: 600px;
+    max-width: 400px;
     display: block;
     margin: 0 auto;
 }
 
 .image-section p {
-    /* Additional styles for the paragraph if needed */
     margin-top: 20px
 
 
