@@ -85,12 +85,13 @@
 .image-section {
     text-align: center;
     padding: 20px;
+    margin: auto;
+    max-width: 600px;
 }
 
 .image-section img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
-    max-width: 400px;
     display: block;
     margin: 0 auto;
 }
