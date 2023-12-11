@@ -19,18 +19,17 @@
 }
 
 .home-button {
-    background-color: transparent;
+    transition-duration: 0.4s;
+    background-color: #4169E1
     border: none; 
-    color: white; 
+    color: black; 
     cursor: pointer;
     font-size: 16px; 
-    padding: 10px 10px; 
-    text-decoration: none; 
     font-family: Verdana, sans-serif; 
 }
 
 .home-button:hover {
-    background-color: transparent;
+    background-color: #;4169e1
     color: #ddd; /* Slightly change color on hover for visual feedback */
 }
 
