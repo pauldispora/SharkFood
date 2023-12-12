@@ -50,8 +50,6 @@ a {
 .logo img {
     max-height: 50px;
     max-width: 100px;
-    width: auto;
-    height: auto;
 }
 
 .logo .navigation {
@@ -75,23 +73,21 @@ a {
 
 .hero-section, .estimate-section, .image-section, .services-section {
     @include section-style;
-}
+    &.hero-section {
+        text-align: left;
+        padding: 20px;
+        background-color: $bluehaze;
+    }
+    
+    h1 {
+        font-size: 2em; 
+        margin-bottom: 30px;
+    }
 
-.hero-section {
-    text-align: left;
-    padding: 20px;
-    background-color: $bluehaze;
-    color: $white;
-}
-
-.hero-section h1 {
-    font-size: 2em; 
-    margin-bottom: 30px;
-}
-
-.hero-section p, .image-section p {
-    margin-bottom: 30px;
-    line-height: 1.6;
+    p {
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
 }
 
 // Bullet Points Styles
@@ -116,6 +112,7 @@ a {
     background-color: $darkblue;
 }
 
+// Media Queries
 @media (max-width: 767px) {
     .content-container, .side-by-side-container, .hero-section, .estimate-section, .image-section, .services-section, .sub-footer {
         flex-direction: column;
