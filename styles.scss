@@ -41,6 +41,8 @@ a {
 // Header Styles
 .header {
     @include flex-container;
+    justify-content: space-between;
+    padding: 30px;
     background-color: $white;
     color: $darkblue;
 }
@@ -52,7 +54,7 @@ a {
     height: auto;
 }
 
-.logo {
+.logo .navigation {
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -60,12 +62,8 @@ a {
 .home-button {
     background: none;
     border: none;
-    color: $darkblue;
-    cursor: pointer;
-    font-size: 16px;
     padding: 10px;
     margin: 10px;
-    text-decoration: none;
 }
 
 // Content Container Styles
