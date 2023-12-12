@@ -42,8 +42,9 @@
 
 .estimate-section {
     padding-left: 10px; /* Adjust as needed for spacing */
-    /* Additional styles for the estimate-section if necessary */
+    font-family: Verdana, sans-serif;
 }
+
 .hero-section {
     text-align: left;
     padding: 10px;
@@ -53,7 +54,7 @@
 
 .hero-section h1 {
     font-size: 2em; 
-    color: #000000;
+    color: #113f67;
     margin-bottom: 50px;
     font-family: Verdana, sans-serif; 
 }
@@ -85,7 +86,7 @@
 .side-by-side-container {
     display: flex;
     justify-content: space-between;
-    align-items: start; /* Align items to the top */
+    align-items: start;
     padding: 20px;
 }
 
@@ -101,10 +102,11 @@
 .image-section {
     text-align: center;
     padding-right: 10px; /* Adjust as needed for spacing */
+    font-family: Verdana, sans-serif;
 }
 
 .image-section img {
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -120,6 +122,7 @@
     text-align: left;
     max-width: 400px;
     padding-left: 10px;
+    font-family: Verdana, sans-serif;
 }
 
 .services-section ul {
@@ -134,7 +137,7 @@
 
 /* Footer Styles */
 .footer {
-    background-color: #4169E1;
+    background-color: #38598b;
     color: white;
     padding: 30px;
     text-align: left;
@@ -143,9 +146,9 @@
     
 /* Sub-Footer Styles */
 .sub-footer {
-    background-color: #4169E1;
+    background-color: #113f67;
     color: white;
-    text-align: left;
+    text-align: right;
     padding: 10px 20px;
     font-family: Verdana, sans-serif;
 }
