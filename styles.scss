@@ -10,15 +10,16 @@ $white: #EDEDED;
     display: flex;
     justify-content: space-between; 
     align-items: flex-start;
-    padding: 20px; 
+    padding: 30px; 
     background-color: $white;
     color: $darkblue;
     font-family: Verdana, sans-serif;
 }
 
 .logo img {
-    height: 70px; /* Adjust as needed */
+    max-height: 50px;
     width: auto;
+    height: auto;
 }
 
 .home-button {
@@ -53,7 +54,7 @@ $white: #EDEDED;
 .hero-section {
     text-align: left;
     padding: 20px;
-    background-color: #bluehaze;
+    background-color: $bluehaze;
     color: $white;
     font-family: Verdana, sans-serif; 
 }
@@ -171,15 +172,16 @@ $white: #EDEDED;
     font-family: Verdana, sans-serif;
 }
 @media (max-width: 767px) {
-    .header {
-        /* Responsive adjustments for header */
+    .home-button {
+    display: none;
+    flex: none; 
     }
 
 content-container, .side-by-side-container {
         flex-direction: column; /* Stack the sections on top of each other */
     }
 
-    .home-button, .hero-section, .estimate-section, .image-section, .services-section, .sub-footer {
+    .hero-section, .estimate-section, .image-section, .services-section, .sub-footer {
         display: none; /* Hide the button on smaller screens if desired */
         flex: none; 
         margin-right: 0; 
@@ -199,3 +201,4 @@ content-container, .side-by-side-container {
         padding-right: 0; /* Reset spacing */
         padding-left: 0; /* Reset spacing */
     }
+}
