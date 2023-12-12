@@ -10,7 +10,7 @@ $white: #EDEDED;
     display: flex;
     justify-content: space-between; 
     align-items: flex-start;
-    padding: 10px; 
+    padding: 20px; 
     background-color: $white;
     color: $darkblue;
     font-family: Verdana, sans-serif;
