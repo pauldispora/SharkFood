@@ -41,7 +41,14 @@
 }
 
 .estimate-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
     padding-left: 10px; /* Adjust as needed for spacing */
+    flex: 1 1 50%; /* Equal distribution */
+    max-width: 50%; /* Limit the width to 50% of the parent */
+    box-sizing: border-box; /* Include padding and border in the element's width */
     font-family: Verdana, sans-serif;
 }
 
