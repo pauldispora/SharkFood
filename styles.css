@@ -36,7 +36,7 @@
 
 .hero-section, .estimate-section {
     flex: 1 1 50%; /* Equal distribution */
-    max-width: 50%; /* Limit the width to 50% of the parent */
+    max-width: 40%; /* Limit the width to 50% of the parent */
     box-sizing: border-box; /* Include padding and border in the element's width */
 }
 
@@ -47,7 +47,7 @@
     justify-content: center; /* Center the content vertically */
     padding-left: 5px; /* Adjust as needed for spacing */
     flex: 1 1 50%; /* Equal distribution */
-    max-width: 50%; /* Limit the width to 50% of the parent */
+    max-width: 30%; /* Limit the width to 50% of the parent */
     box-sizing: border-box; /* Include padding and border in the element's width */
     font-family: Verdana, sans-serif;
 }
