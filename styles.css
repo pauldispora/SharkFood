@@ -2,7 +2,7 @@
 body {
     font-size: 16px;
     line-height: 1.2;
-    font-family: Verdana, Arial, sans-serif, -apple-system;
+    font-family: Verdana, Arial, sans-serif
 }
 
 @media (min-width: 768px) {
@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-    color: 0072CE
+    color: #0072CE
     text-decoration: underline;
 }
 
@@ -64,10 +64,10 @@ a:hover {
     grid-template-areas: 
       "hero estimate"
       "image services";
-    grid-template-columns: (2fr, 1fr);
+    grid-template-columns: 2fr 1fr;
     gap: 0px;
     background-color: #EDEDED;
-    color: #EDEDED;
+    color: #002665;
     padding: 20px;
 }
 
@@ -116,8 +116,12 @@ a:hover {
 
 /* Media Queries */
 @media (max-width: 1024px) {
-    /* Adjustments for the side-by-side-container */
     .side-by-side-container {
-        grid-template-columns: 1fr; /* Single column for smaller screens */
+grid-template-columns: 1fr;
         grid-template-areas:
           "hero"
+          "estimate"
+          "image"
+          "services";
+    }
+}
