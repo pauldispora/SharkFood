@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-    color: /* lighter shade of #002665 */;
+    color: 0072CE
     text-decoration: underline;
 }
 
@@ -47,40 +47,41 @@ a:hover {
     border: none;
     padding: 10px;
     margin: 10px;
+    color: #002665;
 }
 
 /* Content Container Styles */
 .content-container, .side-by-side-container {
     display: grid;
-    grid-template-columns: repeat (1fr, 1fr);
+    grid-template-areas: 
+      "hero estimate"
+      "image services";
+    grid-template-columns: (2fr, 1fr);
     gap: 0px;
-    background-color: #7C8CAC;
+    background-color: #EDEDED;
     color: #EDEDED;
     padding: 20px;
 }
 
-.hero-jotform-container, .image-services-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 0px;
+.hero-jotform-container {
+    grid-area: hero;
     overflow: auto;
 }
 
-.hero-section, .estimate-section, .image-section, .services-section {
-    box-sizing: border-box;
-    text-align: left;
-    padding: 20px;
-    background-color: #7C8CAC;
+.estimate-section {
+    grid-area: estimate;
 }
 
-.hero-section h1, .estimate-section h1, .image-section h1, .services-section h1 {
-    font-size: 2em; 
-    margin-bottom: 30px;
+.image-services-container {
+    grid-area: image;
 }
 
-.hero-section p, .estimate-section p, .image-section p, .services-section p {
-    margin-bottom: 30px;
-    line-height: 1.6;
+.image-section {
+    grid-area: image;
+}
+
+.services-section {
+    grid-area: services;
 }
 
 /* Bullet Points Styles */
@@ -95,7 +96,7 @@ a:hover {
 
 /* Footer Styles */
 .footer, .sub-footer {
-    background-color: /* darker shade of #002665 */;
+    background-color: #001A33;
     color: #EDEDED;
     text-align: left;
     padding: 30px 20px;
@@ -107,20 +108,8 @@ a:hover {
 
 /* Media Queries */
 @media (max-width: 1024px) {
-    .side-by-side-container, .hero-section, .estimate-section, .image-section, .services-section, .hero-jotform-container, .image-services-container {
+    /* Adjustments for the side-by-side-container */
+    .side-by-side-container {
         grid-template-columns: 1fr; /* Single column for smaller screens */
-        max-width: 80%;
-        padding: 20px; /* Adjust the padding as needed */
-    }
-    .home-button {
-        display: none;
-    }
-}
-
-@media (max-width: 767px) {
-    .content-container, .side-by-side-container, .hero-section, .estimate-section, .image-section, .services-section, .sub-footer {
-        flex-direction: column;
-        max-width: 100%;
-        display: none; /* Ensure this is intended */
-    }
-}
+        grid-template-areas:
+          "hero"
