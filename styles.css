@@ -63,6 +63,7 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two columns of equal width */
     gap: 20px; /* Adjust the gap as needed */
+    overflow: auto;
 }
 
 .hero-section, .estimate-section, .image-section, .services-section {
