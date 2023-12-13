@@ -2,7 +2,7 @@
 body {
     font-size: 16px;
     line-height: 1.2;
-    font-family: Verdana, Arial, sans-serif
+    font-family: Verdana, Arial, sans-serif;
     background-color: #EDEDED;
 }
 
@@ -10,7 +10,6 @@ body {
     body {
         font-size: 18px;
         line-height: 1.3;
-        display: none;
     }
 }
 
@@ -20,7 +19,7 @@ a {
 }
 
 a:hover {
-    color: #0072CE
+    color: #0072CE;
     text-decoration: underline;
 }
 
@@ -39,7 +38,6 @@ a:hover {
 
 .content {
     width: 100%;
-    /* max-width: none;
 }
 
 .logo img {
@@ -119,8 +117,8 @@ a:hover {
 /* Media Queries */
 @media (max-width: 1024px) {
     .side-by-side-container {
-        display: none;
-grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: 1fr;
         grid-template-areas:
           "hero"
           "estimate"
