@@ -25,7 +25,7 @@ a:hover {
 
 /* Header Styles */
 .header {
-    display: block;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -60,7 +60,7 @@ a:hover {
 
 /* Content Container Styles */
 .content-container, .side-by-side-container {
-    display: block;
+    display: grid;
     grid-template-areas: 
       "hero estimate"
       "image services";
