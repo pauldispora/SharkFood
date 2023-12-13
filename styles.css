@@ -52,8 +52,8 @@ a:hover {
 /* Content Container Styles */
 .content-container, .side-by-side-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
-    gap: 20px; /* Space between grid items */
+    grid-template-columns: repeat (1fr, 1fr);
+    gap: 0px;
     background-color: #7C8CAC;
     color: #EDEDED;
     padding: 20px;
@@ -61,8 +61,8 @@ a:hover {
 
 .hero-jotform-container, .image-services-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
-    gap: 20px; /* Adjust the gap as needed */
+    grid-template-columns: 2fr 1fr;
+    gap: 0px;
     overflow: auto;
 }
 
