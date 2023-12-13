@@ -64,7 +64,7 @@ a:hover {
     grid-template-areas: 
       "hero estimate"
       "image services";
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: auto
     gap: 0px;
     background-color: #EDEDED;
     color: #002665;
