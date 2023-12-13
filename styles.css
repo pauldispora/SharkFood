@@ -59,9 +59,13 @@ a:hover {
     padding: 20px;
 }
 
+.hero-jotform-container, .image-services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    gap: 20px; /* Adjust the gap as needed */
+}
+
 .hero-section, .estimate-section, .image-section, .services-section {
-    flex: 1 1 50%;
-    max-width: 50%;
     box-sizing: border-box;
     text-align: left;
     padding: 20px;
@@ -101,21 +105,21 @@ a:hover {
 }
 
 /* Media Queries */
-@media (max-width: 767px) {
-    .content-container, .side-by-side-container, .hero-section, .estimate-section, .image-section, .services-section, .sub-footer {
-        flex-direction: column;
-        max-width: 100%;
-        display: none;
+@media (max-width: 1024px) {
+    .side-by-side-container, .hero-section, .estimate-section, .image-section, .services-section, .hero-jotform-container, .image-services-container {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        max-width: 80%;
+        padding: 20px; /* Adjust the padding as needed */
     }
     .home-button {
         display: none;
     }
 }
 
-@media (max-width: 1024px) {
-    .side-by-side-container, .hero-section, .estimate-section, .image-section, .services-section {
-        grid-template-columns: 1fr; /* 1 column for smaller screens */
-        max-width: 80%;
-        padding: 1;
+@media (max-width: 767px) {
+    .content-container, .side-by-side-container, .hero-section, .estimate-section, .image-section, .services-section, .sub-footer {
+        flex-direction: column;
+        max-width: 100%;
+        display: none; /* Ensure this is intended */
     }
 }
