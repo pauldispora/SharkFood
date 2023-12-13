@@ -51,19 +51,18 @@ a:hover {
 
 /* Content Container Styles */
 .content-container, .side-by-side-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    gap: 20px; /* Space between grid items */
     background-color: #7C8CAC;
     color: #EDEDED;
+    padding: 20px;
 }
 
 .hero-section, .estimate-section, .image-section, .services-section {
     flex: 1 1 50%;
     max-width: 50%;
     box-sizing: border-box;
-
     text-align: left;
     padding: 20px;
     background-color: #7C8CAC;
@@ -115,8 +114,8 @@ a:hover {
 
 @media (max-width: 1024px) {
     .side-by-side-container, .hero-section, .estimate-section, .image-section, .services-section {
-        flex-direction: column;
-        max-width: 100%;
-        padding: 0;
+        grid-template-columns: 1fr; /* 1 column for smaller screens */
+        max-width: 80%;
+        padding: 1;
     }
 }
